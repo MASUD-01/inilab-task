@@ -4,10 +4,15 @@
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
     font-size: 10px;
+    overflow-x: hidden;
 }
 
+/* html {
+    width: 1920px;
+} */
+
 body {
-    background-color: #F9FAFF;
+    background-color: #6c76ad;
     width: 1920px;
 }
 
@@ -96,3 +101,116 @@ body {
     gap: 14px;
     align-items: center;
 }
+
+/* -----header part end------
+------------------------------- */
+
+
+/* invite section start */
+.invite-now {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 1920px;
+    height: 51px;
+    background: #F9FAFF;
+
+}
+
+.invite-now>p {
+    flex: 1;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #272727;
+}
+
+.invite-now>p>span {
+    font-weight: 400;
+    color: #00398F;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.invite-now>img {
+    padding-right: 50px;
+}
+
+/* invite section end---
+----------------------------- */
+
+/* slideshow-container start */
+
+.slideshow-container {
+    width: 1920px;
+    overflow-x: hidden;
+}
+
+.slideshow {
+    display: flex;
+    position: relative;
+}
+
+.slideshow>div {
+    position: absolute;
+    right: 196px;
+    top: 361px;
+}
+
+.slideshow>div>p {
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    color: #565656;
+}
+
+.slideshow>div>a {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    text-decoration: none;
+    color: #272727;
+    font-weight: 400;
+}
+
+.slideshow .vector {
+    position: absolute;
+    right: 0;
+    top: 212px;
+    right: 180px;
+    width: 533px;
+    height: 83px;
+    color: #272727;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #002482;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/* @keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+} */
+
+/* slideshow-container end */
