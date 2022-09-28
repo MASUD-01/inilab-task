@@ -1,22 +1,40 @@
-// let slideIndex = 0;
-// showSlides();
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
 
-// function showSlides() {
-//     let i;
-//     let slides = document.getElementsByClassName("mySlides");
-//     let dots = document.getElementsByClassName("dot");
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//     }
-//     slideIndex++;
-//     if (slideIndex > slides.length) { slideIndex = 1 }
-//     for (i = 0; i < dots.length; i++) {
-//         dots[i].className = dots[i].className.replace(" active", "");
-//     }
-//     slides[slideIndex - 1].style.display = "block";
-//     dots[slideIndex - 1].className += " active";
-//     setTimeout(showSlides, 2000); // Change image every 2 seconds
-// }
+
+
+let slideIndexx = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndexx++;
+    if (slideIndexx > slides.length) { slideIndexx = 1 }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndexx - 1].style.display = "block";
+    dots[slideIndexx - 1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
 
 
 // drag slider
@@ -56,13 +74,14 @@ const boundCards = () => {
         cards.style.left = `-${cards_rect.width - container_rect.width}px`;
     }
 }
+
 // drag slider
 const container1 = document.querySelector(".deals-container");
 const cards1 = document.querySelector(".deals-images-slides");
 // keep trak of users mouse down and up
 let isPressDowns = false;
 
-//x horizontal space of cursor from inner container
+// x horizontal space of cursor from inner container
 let cursorXSpaces;
 container1.addEventListener('mousedown', (e) => {
     isPressDowns = true;
@@ -96,17 +115,17 @@ const boundCardss = () => {
 
 // -------------------------------
 let slideIndex = 1;
-showSlides(slideIndex);
+showSlidess(slideIndex);
 
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+    showSlidess(slideIndex += n);
 }
 
 function currentSlide(n) {
-    showSlides(slideIndex = n);
+    showSlidess(slideIndex = n);
 }
 
-function showSlides(n) {
+function showSlidess(n) {
     let i;
     let slides = document.getElementsByClassName("mySlidess");
     let dots = document.getElementsByClassName("dot");
@@ -121,3 +140,6 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+
+
