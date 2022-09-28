@@ -236,17 +236,10 @@ body {
 
 }
 
-/* .star {
-    width: 18.33px;
-    height: 17.43px;
-} */
-
-
-
 .slider-container {
     position: relative;
     width: 1920px;
-    height: 500px;
+    height: 423px;
     cursor: grab;
 }
 
@@ -257,6 +250,7 @@ body {
     display: flex;
     gap: 40px;
     pointer-events: none;
+    height: 423px;
 }
 
 .single-trending-details {
@@ -320,4 +314,348 @@ body {
     font-weight: 700;
     font-size: 18px;
     color: #0A8200;
+}
+
+/* tranding section and drag slider end
+----------------------------------------- */
+
+
+/* .single-deals>h1 {
+    margin-top: 43px;
+}
+
+.single-deals>p {
+    margin-top: 23px;
+} */
+
+
+.deals>h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: #272727;
+    margin-bottom: 27px;
+
+}
+
+.deals {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.deals-container {
+    position: relative;
+    width: 1920px;
+    height: 569px;
+    cursor: grab;
+}
+
+.deals-images-slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    gap: 40px;
+    pointer-events: none;
+    height: 569px;
+}
+
+.single-deals-details {
+    overflow: hidden;
+}
+
+.single-deals-details>img {
+    width: 489px;
+    height: 298px;
+}
+
+.single-deals {
+    margin-left: 21px;
+    text-align: center;
+}
+
+.single-deals>img {
+    margin-top: 30px;
+    width: 151px;
+    height: 62px;
+}
+
+.single-deals>h1 {
+    margin-top: 43px;
+    font-weight: 700;
+    font-size: 36px;
+    color: #272727;
+}
+
+.single-deals>p {
+    margin-top: 23px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #272727;
+}
+
+/* trending offers
+----------------------- */
+.trending-offers>h1 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #272727;
+    margin-left: 50px;
+}
+
+.trending-offers {
+    margin-top: 80px;
+}
+
+.button {
+    display: block;
+    /* text-align: center;
+    margin: 10px auto; */
+    padding: 2px 10px;
+    width: 120px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #272727;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    font-weight: 400;
+}
+
+.offer-div {
+    width: 542px;
+    height: 587px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgb(154, 142, 142);
+}
+
+.offer-div>img {
+    width: 175px;
+    height: 71px;
+}
+
+.offer-div>h1 {
+    font-weight: 700;
+    font-size: 48px;
+    margin-top: 65px;
+    margin-bottom: 48px;
+    color: #272727;
+
+}
+
+.trending-offer {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    margin-top: 30px;
+}
+
+.foreever-div {
+    width: 368px;
+    height: 441px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.foreever-div>h1 {
+    font-weight: 700;
+    font-size: 48px;
+    color: #272727;
+    margin-bottom: 49px;
+
+}
+
+.offer-div-container {
+    display: flex;
+}
+
+.foreever-div>p {
+    font-weight: 700;
+    font-size: 48px;
+    color: #272727;
+    margin-bottom: 49px;
+
+}
+
+/* ------------ */
+
+.mySlidess {
+    display: none
+}
+
+.mySlidess>img {
+    height: 587px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-containers {
+    max-width: 1920px;
+    height: 617px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(250, 250, 250);
+    background-color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 20px;
+    border-radius: 50%;
+    /* margin-right: 3px; */
+}
+
+.prev {
+    left: 20px;
+    border-radius: 50%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+} */
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+/* festivals */
+.festivals {
+    position: relative;
+}
+
+.festivals>img {
+    height: 892px;
+}
+
+.festivals>div {
+    position: absolute;
+    top: 217px;
+    left: 695px;
+    text-align: center;
+}
+
+.festivals>div>a {
+    margin: 0 auto;
+}
+
+.festivals-div>h1 {
+    font-size: 100px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #FFFFFF;
+
+}
+
+.festivals-div>p {
+    font-weight: 700;
+    font-size: 48px;
+    color: #FFFFFF;
+    margin-top: 91px;
+}
+
+.buttons {
+    display: block;
+    /* text-align: center;
+    margin: 10px auto; */
+    padding: 2px 10px;
+    width: 120px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fffdfd;
+    border: 2px solid rgb(252, 252, 252);
+    border-radius: 8px;
+    font-weight: 400;
+}
+
+.festivals-div>h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    color: #FFFFFF;
+    margin-top: 36px;
+    margin-bottom: 80px;
 }
